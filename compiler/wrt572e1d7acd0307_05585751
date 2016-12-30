@@ -1,0 +1,127 @@
+<?php
+/* Smarty version 3.1.29, created on 2016-05-07 18:53:14
+  from "C:\xampp\htdocs\Website-Alexander\styles\templates\news\noticia2.tpl" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_572e1d7acc88e7_56551818',
+  'file_dependency' => 
+  array (
+    '57bf058a33e80996bc00d7ee4bfc8cbb447f483f' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Website-Alexander\\styles\\templates\\news\\noticia2.tpl',
+      1 => 1462639894,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:overall/header.tpl' => 1,
+    'file:overall/toolbar-left.tpl' => 1,
+    'file:overall/footer.tpl' => 1,
+  ),
+),false)) {
+function content_572e1d7acc88e7_56551818 ($_smarty_tpl) {
+$_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:overall/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+
+<div class="main-wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Columna noticia -->
+			<div class="col-lg-8">
+				<!-- Content img noticia -->
+				<div class="z-depth-1 center">
+					<a><img class="img-responsive" src="http://mdbootstrap.com/images/regular/nature/img%20(48).jpg" alt=""></a>
+				</div>
+				<!-- seccion titulo -->
+				<div class="card-panel text-center hoverable">
+					<h3>Kim Kardashian lookalike Dolly Castro ditches law training to make her fortune on Instagram</h3>
+					<div class="metadata">
+						<span class=" publicado ion-ios-clock-outline"> 02/05/2016</span>					
+					</div>
+					<hr>
+					<div class="text-center hidden-xs">
+                        <a class="btn-floating btn-large fb-bg waves-effect waves-light"><i class="ion-social-facebook"> </i></a>
+                        <a class="btn-floating btn-large tw-bg waves-effect waves-light"><i class="ion-social-twitter"> </i></a>
+                        <a class="btn-floating btn-large gplus-bg waves-effect waves-light"><i class="ion-social-googleplus"> </i></a>
+                    </div>
+				</div>
+				<!-- desc noticia -->
+				<p class="medium-500">The Nicaraguan model makes 80 per cent of her earnings thanks to a steady stream of very sexy selfies - but could she steal Kim's crown? </p>
+				<p>Kim Kardashian lookalike Dolly Castro is more than just a pretty face.But the Nicaraguan-born model has decided to ditch her training in law to build an empire on Instagram - and she's even tipped to steal Kimmie's crown.The curvaceous beauty has a bum ample enough to Keep Up With the Kardashians and has amassed two million fans thanks to her steady stream of sexy pictures.On top of that she has more than 70,000 followers on Twitter - including Kim's little brother Rob .</p>
+				<p>Dolly told Chilean newspaper La Cuarta: "I have earned fame and money thanks to God and social media."For me, it’s important that my followers know what I’m doing the whole time."I'm connected most of the time because I make 80 percent of my earnings thanks to social media."
+				She continued: "Since the beginning of my career, I have learned to be original, but never to show hunger for fame"</p>
+				<hr>
+				<!-- comentarios -->
+				<div class="card-panel no-padding comments">
+					<h6 class="text-center title">Comentarios <span class="count-comments">2</span></h6>
+					<hr>
+					<div class="container-fluid">
+						<div class="row hoverable">
+							<div class="col-sm-2">
+								<img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-1.jpg" class="img-responsive img-circle">
+							</div>
+							<div class="col-sm-10">
+								<h6 class="title"><b>Autor comentario</b></h6>
+								<span class="ion-edit"> 06/05/2016</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum repudiandae voluptatibus praesentium debitis in porro quo eos repellat odio eius, qui cumque neque natus, magnam esse quam exercitationem magni vitae.</p>
+							</div>
+						</div>
+						<div class="row hoverable">
+							<div class="col-sm-2">
+								<img src="http://mdbootstrap.com/wp-content/uploads/2015/10/avatar-1.jpg" class="img-responsive img-circle">
+							</div>
+							<div class="col-sm-10">
+								<h6 class="title"><b>Autor comentario</b></h6>
+								<span class="ion-edit"> 06/05/2016</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum repudiandae voluptatibus praesentium debitis in porro quo eos repellat odio eius, qui cumque neque natus, magnam esse quam exercitationem magni vitae.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- formulario comentario -->
+				<div class="card-panel reply-section hoverable">
+                    <div class="row">
+                        <h5 class="text-center">Deja un comentario</h5>
+                        <hr>
+                        <form class="col-md-12">
+                            <div class="input-field">
+                                <i class="ion-android-person prefix"></i>
+                                <input id="reply-name" class="validate" type="text">
+                                <label for="reply-name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="ion-email prefix"></i>
+                                <input id="reply-mail" class="validate" type="email">
+                                <label for="reply-mail">email</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="reply-www" class="validate" type="file">
+                            </div>
+                            <div class="input-field">
+                                <i class="ion-edit prefix"></i>
+                                <textarea id="reply-text" class="materialize-textarea"></textarea>
+                                <label for="reply-text">Opina algo...</label>
+                            </div>
+                        </form>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary waves-effect waves-light">Submit</button>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<!-- Columna izquierda -->
+			<div class="col-lg-4">
+				<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:overall/toolbar-left.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+
+			</div>
+		</div>		
+
+	</div>
+</div>
+<?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:overall/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}

@@ -1,0 +1,49 @@
+ErrorDocument 404 http://localhost/positivocadadia/pagerror.html
+
+Options -Indexes +FollowSymLinks
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f
+Rewriterule ^upload/file/ index.php?view=image_upload
+Rewriterule ^news/(\w+)$ index.php?view=index&categoria=$1
+Rewriterule ^pag/(\w+)$ index.php?view=index&pag=$1
+Rewriterule ^news/(.*)/(.*).html$ index.php?view=contenido&categoria=$1&id=$2
+Rewriterule ^news/(.*)/(.*)$ index.php?view=index&categoria=$1&pag=$2
+
+# Protejer el archivo .htaccess para que no sea leido por el navegador
+<Files .htaccess>
+	Order allow,deny
+	Deny from all
+</Files>
+
+# Comprimir los archivos de la web
+<ifmodule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE text/xml
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE text/javascript
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE application/x-javascript
+	AddOutputFilterByType DEFLATE application/xml
+	AddOutputFilterByType DEFLATE application/xhtml+xml
+	AddOutputFilterByType DEFLATE application/rss+xml
+</ifmodule>
+
+# Cachear las imagenes y archivos 
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+	ExpiresByType text/html "access plus 1 month"
+	ExpiresByType application/javascript "access plus 1 month"
+	ExpiresByType application/x-javascript "access plus 1 month"
+	ExpiresByType application/xhtml-xml "access plus 600 seconds"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType image/x-icon "access plus 1 month"
+</ifmodule>
+
+
+
+
