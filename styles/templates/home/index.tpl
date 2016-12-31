@@ -100,7 +100,7 @@
 										<a href="pag/{$smarty.get.pag + 1}" class="btn blue white-text">Siguiente</a>
 									{/if}
 								{else}
-									<a href="#" class="btn blue white-text disabled">Siguiente</a>
+									<a href="#" class="btn blue white-text disabled">next</a>
 								{/if}
 								
 						    {/if}
